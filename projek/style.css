@@ -1,0 +1,102 @@
+* {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+}
+.main {
+	width: 100%;
+	height: 100vh;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.75),rgba(0, 0, 0, 0.75)),url("14.jpg");
+	background-size: cover;
+	background-position: center;
+}
+
+.navbar{
+	width: 90%;
+	margin: auto;
+	padding: 10px 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.logo{
+	font-size: 36px;
+	color: white;
+	font-weight: bold;
+	width: 120px;
+	cursor: pointer;
+}
+.navbar ul li {
+	list-style: none;
+	display: inline-block;
+	margin: 0 20px;
+	position: relative;
+}
+.navbar ul li a {
+	color: white;
+	text-transform: uppercase;
+}
+.navbar ul li::after {
+	content: "";
+	height: 3px;
+	width: 0px;
+	background: green;
+	position: absolute;
+	left: 0;
+	bottom: -10px;
+	transition: 0.5s;
+}
+.navbar ul li:hover::after {
+	width: 100px;
+}
+.content {
+	top: 40%;
+	width: 100%;
+	text-align: center;
+	color: white;
+	position: absolute;
+	transform: translateY(-5px);
+}
+.content h1 {
+	font-size: 30px;
+	margin-top: 30px;
+	text-shadow: -4px 4px 4px #000;
+
+}
+.content p {
+	margin: 15px;
+	font-weight: 100;
+	line-height: 25px;
+}
+.button {
+	position: absolute;
+	top: 50%;
+	left: 28%;
+	margin-top: 90px;
+	font-weight: bold;
+}
+
+.btn {
+	border: 2px solid green;
+	padding: 10px 30px;
+	color: black;
+	text-decoration: none;
+	transition: 0.6s ease;
+	border-radius: 20px;
+	margin: 10px;
+	background-color: khaki;
+	margin-left: 120px;
+}
+.btn: hover{
+	background-color: blue;
+    color: blanchedalmond;
+}
+
+marquee{
+	top: 25%;
+	font-size: 36PX;
+	width: 75%;
+	text-align: center;
+	color: bisque;
+	position: absolute;
+}
